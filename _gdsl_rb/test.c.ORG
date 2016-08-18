@@ -1,0 +1,68 @@
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "benchmark.h"
+#include <gdsl.h>
+
+typedef struct {
+	unsigned key;
+	int value;
+} intmap_t;
+
+typedef struct {
+	char *key;
+	int value;
+} strmap_t;
+
+int int_cmp(const void *_a, const void *_b)
+{
+	intmap_t *a = (intmap_t*)_a;
+	intmap_t *b = (intmap_t*)_b;
+	return (a->key > b->key) - (a->key < b->key);
+}
+int str_cmp(const void *a, const void *b)
+{
+	return strcmp(((strmap_t*)a)->key, ((strmap_t*)b)->key);
+}
+
+int test_int(int N, const unsigned *data)
+{
+	int i, n = 0, ret;
+	intmap_t *d, *r;
+	gdsl_rbtree_t *h;
+	h = gdsl_rbtree_alloc(0, 0, 0, int_cmp);
+	for (i = 0; i < N; ++i) {
+		d = (intmap_t*)malloc(sizeof(intmap_t));
+		d->key = data[i]; d->value = i;
+		gdsl_rbtree_insert(h, d, &ret);
+		if (ret != 2) {
+			r = gdsl_rbtree_remove(h, d);
+			free(d); free(r);
+			--n;
+		} else ++n;
+	}
+	return n;
+}
+int test_str(int N, char * const *data)
+{
+	int i, n = 0, ret;
+	strmap_t *d, *r;
+	gdsl_rbtree_t *h;
+	h = gdsl_rbtree_alloc(0, 0, 0, str_cmp);
+	for (i = 0; i < N; ++i) {
+		d = (strmap_t*)malloc(sizeof(strmap_t));
+		d->key = data[i]; d->value = i;
+		gdsl_rbtree_insert(h, d, &ret);
+		if (ret != 2) {
+			r = gdsl_rbtree_remove(h, d);
+			free(d); free(r);
+			--n;
+		} else ++n;
+	}
+	return n;
+}
+
+int main(int argc, char *argv[])
+{
+	return udb_benchmark(argc, argv, test_int, test_str);
+}

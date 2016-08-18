@@ -1,0 +1,180 @@
+Benchmark of Dictionary Structures by Heng Li
+=============================================
+http://lh3lh3.users.sourceforge.net/udb.shtml
+http://lh3lh3.users.sourceforge.net/download/udb-latest.tar.bz2
+
+R. Carbone Aug 2016
+porting to Linux GNU Debian stretch/sid Intel(R) Core(TM) i54250U CPU @1.30GHz
+==============================================================================
+http://github.com/rcarbone/kudb
+
+What I did:
+  o installed required packages
+    sudo apt-get install libglib2.0-dev
+    sudo apt-get install libboost-all-dev
+    sudo apt-get install libqt4-dev
+
+   gdsl is not available as Debian package but I have it on my system
+   the test case is commented out in Makefile but you can download gdsl from the Internet
+   GDSL project homepage: http://www.nongnu.org/gdsl
+
+  o Modified several sources to compile on my Linux Debian (the original version has been saved the the suffix .ORG)
+  o Modified top-level Makefile to compile all the subdirectories
+  o Added a run rule to run a complete test
+  o Wrote a simple perl script etc/parse-udb.pl to parse and sort the output of a test run
+
+After you have compiled the software you can run a test with
+  you@home> make run | tee result.kudb
+  you@home> etc/parse-kudb.pl result.kudb
+
+Here are the results on my system (Linux nuc 3.2.0-4-amd64 #1 SMP Debian 3.2.81-1 x86_64 GNU/Linux)
+
+Integer test results sorted by CPU Time
+=========================================================
+Implementation        | CPU (secs) | Memory (kB) |    #
+ 1| rdestl            |      0.360 |  265432.000 | 625792
+ 2| khash             |      0.530 |  228424.000 | 625792
+ 3| google_dense      |      0.640 |  249068.000 | 625792
+ 4| tr1_unordered_map |      1.020 |  244628.000 | 625792
+ 5| stb_hash          |      1.170 |  232076.000 | 625792
+ 6| sgi_hash_map      |      1.220 |  241744.000 | 625792
+ 7| google_sparse     |      1.300 |  225140.000 | 625792
+ 8| htable            |      1.390 |  297124.000 | 625792
+ 9| _qt_qhash         |      1.390 |  245592.000 | 625792
+10| _glib_hash        |      1.540 |  256348.000 | 625792
+11| uthash            |      1.570 |  273184.000 | 625792
+12| _boost_hash       |      1.820 |  241752.000 | 625792
+13| stx_btree         |      2.130 |  225128.000 | 625792
+14| kbtree            |      2.490 |  224228.000 | 625792
+15| sgi_map           |      4.040 |  245456.000 | 625792
+16| JE_rb_old         |      4.260 |  244820.000 | 625792
+17| NP_rbtree         |      4.280 |  244820.000 | 625792
+18| libavl_rb_cpp     |      4.600 |  245456.000 | 625792
+19| TN_rbtree         |      4.700 |  245456.000 | 625792
+20| libavl_rb_cpp2    |      4.760 |  235688.000 | 625792
+21| libavl_avl_cpp    |      4.960 |  245456.000 | 625792
+22| JE_rb_new         |      5.480 |  234784.000 | 625792
+23| sglib_rbtree      |      5.500 |  244820.000 | 625792
+24| libavl_avl        |      5.920 |  264356.000 | 625792
+25| libavl_prb        |      5.960 |  264356.000 | 625792
+26| libavl_rb         |      6.110 |  264356.000 | 625792
+27| JG_btree          |      6.370 |  256172.000 | 625792
+28| JE_trp_hash       |      6.580 |  234784.000 | 625792
+29| JE_trp_prng       |      6.890 |  244556.000 | 625792
+30| NP_splaytree      |      6.970 |  234788.000 | 625792
+31| _gdsl_rb          |      7.290 |  264356.000 | 625792
+32| _glib_tree        |      7.470 |  270052.000 | 625792
+33| libavl_bst        |      7.910 |  254588.000 | 625792
+34| _qt_qmap          |      8.420 |  237624.000 | 625792
+
+String test results sorted by CPU Time
+=========================================================
+Implementation        | CPU (secs) | Memory (kB) |    #
+ 1| google_dense      |      0.520 |  609280.000 | 4999988  Bug here!
+ 2| rdestl            |      0.720 |  289996.000 | 625792
+ 3| tr1_unordered_map |      0.750 |  455320.000 | 5000000  Bug here!
+ 4| khash             |      1.300 |  234452.000 | 625792
+ 5| _glib_hash        |      1.580 |  255592.000 | 625792
+ 6| htable            |      1.660 |  297140.000 | 625792
+ 7| stb_hash          |      1.730 |  248452.000 | 625792
+ 8| google_sparse     |      1.910 |  314536.000 | 4999982  Bug here!
+ 9| _qt_qhash         |      1.970 |  254460.000 | 625792
+10| uthash            |      2.000 |  272376.000 | 625792
+11| _boost_hash       |      2.230 |  253716.000 | 625792
+12| sgi_hash_map      |      2.260 |  241748.000 | 625792
+13| JE_rb_old         |      6.230 |  526244.000 | 4975444  Bug here!
+14| stx_btree         |      6.860 |  230672.000 | 625792
+15| kbtree            |      7.170 |  232424.000 | 625792
+16| libavl_avl_cpp    |      8.560 |  245456.000 | 625792
+17| libavl_rb_cpp     |      8.630 |  245456.000 | 625792
+18| _glib_tree        |      8.970 |  270056.000 | 625792
+19| sglib_rbtree      |      9.290 |  244820.000 | 625792
+20| NP_rbtree         |      9.770 |  254588.000 | 625792
+21| sgi_map           |      9.920 |  255224.000 | 625792
+22| libavl_rb         |      9.960 |  264356.000 | 625792
+23| libavl_rb_cpp2    |     10.090 |  245456.000 | 625792
+24| libavl_avl        |     11.150 |  264356.000 | 625792
+25| TN_rbtree         |     11.270 |  255220.000 | 625792
+26| JG_btree          |     11.410 |  256188.000 | 625792
+27| libavl_prb        |     11.460 |  264356.000 | 625792
+28| NP_splaytree      |     13.120 |  244820.000 | 625792
+29| _gdsl_rb          |     14.110 |  264356.000 | 625792
+30| JE_trp_hash       |     14.450 |  244820.000 | 625792
+31| libavl_bst        |     15.270 |  254588.000 | 625792
+32| JE_trp_prng       |     15.340 |  244820.000 | 625792
+33| _qt_qmap          |     17.120 |  246336.000 | 625792
+
+Integer test results sorted by Memory
+=========================================================
+Implementation        | CPU (secs) | Memory (kB) |    #
+ 1| kbtree            |      2.490 |  224228.000 | 625792
+ 2| stx_btree         |      2.130 |  225128.000 | 625792
+ 3| google_sparse     |      1.300 |  225140.000 | 625792
+ 4| khash             |      0.530 |  228424.000 | 625792
+ 5| stb_hash          |      1.170 |  232076.000 | 625792
+ 6| JE_rb_new         |      5.480 |  234784.000 | 625792
+ 7| JE_trp_hash       |      6.580 |  234784.000 | 625792
+ 8| NP_splaytree      |      6.970 |  234788.000 | 625792
+ 9| libavl_rb_cpp2    |      4.760 |  235688.000 | 625792
+10| _qt_qmap          |      8.420 |  237624.000 | 625792
+11| sgi_hash_map      |      1.220 |  241744.000 | 625792
+12| _boost_hash       |      1.820 |  241752.000 | 625792
+13| JE_trp_prng       |      6.890 |  244556.000 | 625792
+14| tr1_unordered_map |      1.020 |  244628.000 | 625792
+15| JE_rb_old         |      4.260 |  244820.000 | 625792
+16| NP_rbtree         |      4.280 |  244820.000 | 625792
+17| sglib_rbtree      |      5.500 |  244820.000 | 625792
+18| libavl_avl_cpp    |      4.960 |  245456.000 | 625792
+19| libavl_rb_cpp     |      4.600 |  245456.000 | 625792
+20| sgi_map           |      4.040 |  245456.000 | 625792
+21| TN_rbtree         |      4.700 |  245456.000 | 625792
+22| _qt_qhash         |      1.390 |  245592.000 | 625792
+23| google_dense      |      0.640 |  249068.000 | 625792
+24| libavl_bst        |      7.910 |  254588.000 | 625792
+25| JG_btree          |      6.370 |  256172.000 | 625792
+26| _glib_hash        |      1.540 |  256348.000 | 625792
+27| _gdsl_rb          |      7.290 |  264356.000 | 625792
+28| libavl_avl        |      5.920 |  264356.000 | 625792
+29| libavl_prb        |      5.960 |  264356.000 | 625792
+30| libavl_rb         |      6.110 |  264356.000 | 625792
+31| rdestl            |      0.360 |  265432.000 | 625792
+32| _glib_tree        |      7.470 |  270052.000 | 625792
+33| uthash            |      1.570 |  273184.000 | 625792
+34| htable            |      1.390 |  297124.000 | 625792
+
+String test results sorted by Memory
+=========================================================
+Implementation        | CPU (secs) | Memory (kB) |    #
+ 1| stx_btree         |      6.860 |  230672.000 | 625792
+ 2| kbtree            |      7.170 |  232424.000 | 625792
+ 3| khash             |      1.300 |  234452.000 | 625792
+ 4| sgi_hash_map      |      2.260 |  241748.000 | 625792
+ 5| JE_trp_hash       |     14.450 |  244820.000 | 625792
+ 6| JE_trp_prng       |     15.340 |  244820.000 | 625792
+ 7| NP_splaytree      |     13.120 |  244820.000 | 625792
+ 8| sglib_rbtree      |      9.290 |  244820.000 | 625792
+ 9| libavl_avl_cpp    |      8.560 |  245456.000 | 625792
+10| libavl_rb_cpp2    |     10.090 |  245456.000 | 625792
+11| libavl_rb_cpp     |      8.630 |  245456.000 | 625792
+12| _qt_qmap          |     17.120 |  246336.000 | 625792
+13| stb_hash          |      1.730 |  248452.000 | 625792
+14| _boost_hash       |      2.230 |  253716.000 | 625792
+15| _qt_qhash         |      1.970 |  254460.000 | 625792
+16| libavl_bst        |     15.270 |  254588.000 | 625792
+17| NP_rbtree         |      9.770 |  254588.000 | 625792
+18| TN_rbtree         |     11.270 |  255220.000 | 625792
+19| sgi_map           |      9.920 |  255224.000 | 625792
+20| _glib_hash        |      1.580 |  255592.000 | 625792
+21| JG_btree          |     11.410 |  256188.000 | 625792
+22| _gdsl_rb          |     14.110 |  264356.000 | 625792
+23| libavl_avl        |     11.150 |  264356.000 | 625792
+24| libavl_prb        |     11.460 |  264356.000 | 625792
+25| libavl_rb         |      9.960 |  264356.000 | 625792
+26| _glib_tree        |      8.970 |  270056.000 | 625792
+27| uthash            |      2.000 |  272376.000 | 625792
+28| rdestl            |      0.720 |  289996.000 | 625792
+29| htable            |      1.660 |  297140.000 | 625792
+30| google_sparse     |      1.910 |  314536.000 | 4999982  Bug here!
+31| tr1_unordered_map |      0.750 |  455320.000 | 5000000  Bug here!
+32| JE_rb_old         |      6.230 |  526244.000 | 4975444  Bug here!
+33| google_dense      |      0.520 |  609280.000 | 4999988  Bug here!

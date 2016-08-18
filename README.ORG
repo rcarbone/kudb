@@ -1,0 +1,34 @@
+CPU:    Xeon E5440 @ 2.83GHz (x64)
+OS:     Debian GNU/Linux 5.0
+Kernel: 2.6.27
+Gcc:    4.3.2
+Option: -g -O2 -fomit-frame-pointer
+Design: 1) Generate a random array of 5 million integers with 1.25 million distict keys
+        2) For each integer, test if it exists in the dictionary; add if absent; delete if present
+        3) To test the performance given string keys, convert integers to strings with sprintf()
+        4) CPU time excludes time to generate the array
+        5) Memory excludes the memory allocated to the char* pointers
+
+Comments: The performance may be highly correlated with the size of data input due to rehashing.
+
+=====================================================================================================
+                                        Integer              String
+ Library               Version      CPU/sec  Mem/MB     CPU/sec  Mem/MB      Comment
+-----------------------------------------------------------------------------------------------------
+ glib-hash                 2.22        2.26    44.4        2.60    49.2      C void ptr; chaining
+ google_dense*              1.9        0.52    32.2        1.96    64.2      C++ template
+ google_sparse*             1.9        1.58     8.9        4.62    14.9      C++ template
+ hash_map             gcc-4.3.2        1.38    25.1        2.40    25.1      C++ template; chaining
+ khash*                   0.2.6        0.56    17.4        1.90    25.6      C macro; double hashing
+ stb-hash*                 2.23        1.48    15.8        5.68    64.9      C macro
+ unordered_map/gcc    gcc-4.3.2        1.20    28.0        2.40    28.0      C++ template
+ unordered_map/boost     1.45.0        1.36    25.2        2.42    25.2      C++ template
+ uthash*                  1.9.3        2.22    55.3        3.22    55.3      C macro
+-----------------------------------------------------------------------------------------------------
+ glib-tree                 2.22        9.06    52.7       11.86    52.7      C void ptr; RB-tree
+ kbtree*               20110116        2.46     8.8       10.56    16.8      C macro; B-tree
+ map                  gcc-4.3.2        4.88    28.7       10.18    38.2      C++ template; RB-tree
+ NP-rbtree*            20071228        5.12    28.2       10.38    37.7      C macro; RB-tree
+ stx-btree*               0.8.3        1.94     9.0        9.88    14.3      C++ template; B+ tree
+=====================================================================================================
+ * Library source codes included.

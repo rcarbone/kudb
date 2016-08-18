@@ -1,0 +1,1565 @@
+Running test _boost_hash/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.820 (= 1.810 + 0.010)
+[benchmark] rss diff: 432.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _boost_hash/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538368.000 kB
+-- free          11873864.000 kB
+
+-- retval                   0
+-- real                 2.696 sec
+-- user                 2.610 sec
+-- sys                  0.070 sec
+-- maxrss          241752.000 kB
+-- avgrss          198657.678 kB
+-- maxvsize        253556.000 kB
+-- avgvsize        219220.944 kB
+
+Running test _gdsl_rb/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 7.290 (= 7.260 + 0.030)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _gdsl_rb/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538244.000 kB
+-- free          11873736.000 kB
+
+-- retval                   0
+-- real                 8.147 sec
+-- user                 8.040 sec
+-- sys                  0.090 sec
+-- maxrss          264356.000 kB
+-- avgrss          245222.882 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        251646.911 kB
+
+Running test _glib_hash/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215680.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.540 (= 1.530 + 0.010)
+[benchmark] rss diff: 220.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _glib_hash/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538440.000 kB
+-- free          11873932.000 kB
+
+-- retval                   0
+-- real                 2.443 sec
+-- user                 2.350 sec
+-- sys                  0.070 sec
+-- maxrss          256348.000 kB
+-- avgrss          201276.364 kB
+-- maxvsize        271388.000 kB
+-- avgvsize        222328.413 kB
+
+Running test _glib_tree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215684.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 7.470 (= 7.460 + 0.010)
+[benchmark] rss diff: 54368.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _glib_tree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538828.000 kB
+-- free          11874316.000 kB
+
+-- retval                   0
+-- real                 8.337 sec
+-- user                 8.250 sec
+-- sys                  0.060 sec
+-- maxrss          270052.000 kB
+-- avgrss          250188.862 kB
+-- maxvsize        281128.000 kB
+-- avgvsize        263989.516 kB
+
+Running test google_dense/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 0.640 (= 0.620 + 0.020)
+[benchmark] rss diff: 16684.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit google_dense/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538804.000 kB
+-- free          11874292.000 kB
+
+-- retval                   0
+-- real                 1.520 sec
+-- user                 1.360 sec
+-- sys                  0.140 sec
+-- maxrss          249068.000 kB
+-- avgrss          167287.040 kB
+-- maxvsize        260728.000 kB
+-- avgvsize        194176.027 kB
+
+Running test google_sparse/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215892.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.300 (= 1.300 + 0.000)
+[benchmark] rss diff: 452.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit google_sparse/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538592.000 kB
+-- free          11874080.000 kB
+
+-- retval                   0
+-- real                 2.153 sec
+-- user                 2.080 sec
+-- sys                  0.060 sec
+-- maxrss          225140.000 kB
+-- avgrss          180615.643 kB
+-- maxvsize        237072.000 kB
+-- avgvsize        203082.516 kB
+
+Running test htable/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.390 (= 1.350 + 0.040)
+[benchmark] rss diff: 81872.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit htable/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538684.000 kB
+-- free          11874172.000 kB
+
+-- retval                   0
+-- real                 2.264 sec
+-- user                 2.150 sec
+-- sys                  0.090 sec
+-- maxrss          297124.000 kB
+-- avgrss          223263.357 kB
+-- maxvsize        300604.000 kB
+-- avgvsize        237171.071 kB
+
+Running test JE_rb_new/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215248.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 5.480 (= 5.480 + 0.000)
+[benchmark] rss diff: 19536.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JE_rb_new/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538432.000 kB
+-- free          11873912.000 kB
+
+-- retval                   0
+-- real                 6.351 sec
+-- user                 6.270 sec
+-- sys                  0.060 sec
+-- maxrss          234784.000 kB
+-- avgrss          217249.165 kB
+-- maxvsize        238476.000 kB
+-- avgvsize        224487.835 kB
+
+Running test JE_rb_old/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 4.260 (= 4.260 + 0.000)
+[benchmark] rss diff: 29568.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JE_rb_old/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538868.000 kB
+-- free          11874344.000 kB
+
+-- retval                   0
+-- real                 5.123 sec
+-- user                 5.050 sec
+-- sys                  0.050 sec
+-- maxrss          244820.000 kB
+-- avgrss          221647.686 kB
+-- maxvsize        248240.000 kB
+-- avgvsize        229737.957 kB
+
+Running test JE_trp_hash/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215248.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 6.580 (= 6.560 + 0.020)
+[benchmark] rss diff: 19536.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JE_trp_hash/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539272.000 kB
+-- free          11874736.000 kB
+
+-- retval                   0
+-- real                 7.456 sec
+-- user                 7.360 sec
+-- sys                  0.060 sec
+-- maxrss          234784.000 kB
+-- avgrss          219703.623 kB
+-- maxvsize        238476.000 kB
+-- avgvsize        226423.973 kB
+
+Running test JE_trp_prng/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 6.890 (= 6.870 + 0.020)
+[benchmark] rss diff: 29304.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JE_trp_prng/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539364.000 kB
+-- free          11874828.000 kB
+
+-- retval                   0
+-- real                 7.782 sec
+-- user                 7.690 sec
+-- sys                  0.060 sec
+-- maxrss          244556.000 kB
+-- avgrss          227701.440 kB
+-- maxvsize        248240.000 kB
+-- avgvsize        234364.908 kB
+
+Running test JG_btree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 6.370 (= 6.360 + 0.010)
+[benchmark] rss diff: 40920.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JG_btree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539508.000 kB
+-- free          11874972.000 kB
+
+-- retval                   0
+-- real                 7.252 sec
+-- user                 7.150 sec
+-- sys                  0.070 sec
+-- maxrss          256172.000 kB
+-- avgrss          235597.789 kB
+-- maxvsize        259728.000 kB
+-- avgvsize        242379.756 kB
+
+Running test kbtree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 2.490 (= 2.480 + 0.010)
+[benchmark] rss diff: 372.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit kbtree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538732.000 kB
+-- free          11874196.000 kB
+
+-- retval                   0
+-- real                 3.359 sec
+-- user                 3.280 sec
+-- sys                  0.060 sec
+-- maxrss          224228.000 kB
+-- avgrss          196343.784 kB
+-- maxvsize        227916.000 kB
+-- avgvsize        206734.511 kB
+
+Running test khash/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215248.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 0.530 (= 0.530 + 0.000)
+[benchmark] rss diff: 372.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit khash/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539076.000 kB
+-- free          11874536.000 kB
+
+-- retval                   0
+-- real                 1.402 sec
+-- user                 1.340 sec
+-- sys                  0.040 sec
+-- maxrss          228424.000 kB
+-- avgrss          158175.159 kB
+-- maxvsize        231908.000 kB
+-- avgvsize        178150.899 kB
+
+Running test libavl_avl_cpp/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[test_int] node size: 32
+[int data] # elements: 625792
+[int data] CPU time: 4.960 (= 4.950 + 0.010)
+[benchmark] rss diff: 424.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_avl_cpp/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539124.000 kB
+-- free          11874580.000 kB
+
+-- retval                   0
+-- real                 5.831 sec
+-- user                 5.770 sec
+-- sys                  0.040 sec
+-- maxrss          245456.000 kB
+-- avgrss          223373.205 kB
+-- maxvsize        257264.000 kB
+-- avgvsize        239088.578 kB
+
+Running test libavl_avl/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 5.920 (= 5.900 + 0.020)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_avl/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539248.000 kB
+-- free          11874704.000 kB
+
+-- retval                   0
+-- real                 6.815 sec
+-- user                 6.720 sec
+-- sys                  0.060 sec
+-- maxrss          264356.000 kB
+-- avgrss          241095.640 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        248272.230 kB
+
+Running test libavl_bst/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 7.910 (= 7.890 + 0.020)
+[benchmark] rss diff: 39336.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_bst/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539084.000 kB
+-- free          11874532.000 kB
+
+-- retval                   0
+-- real                 8.780 sec
+-- user                 8.690 sec
+-- sys                  0.070 sec
+-- maxrss          254588.000 kB
+-- avgrss          237962.674 kB
+-- maxvsize        258144.000 kB
+-- avgvsize        244255.488 kB
+
+Running test libavl_prb/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 5.960 (= 5.950 + 0.010)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_prb/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538880.000 kB
+-- free          11874324.000 kB
+
+-- retval                   0
+-- real                 6.842 sec
+-- user                 6.750 sec
+-- sys                  0.060 sec
+-- maxrss          264356.000 kB
+-- avgrss          241526.261 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        248473.568 kB
+
+Running test libavl_rb_cpp2/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[test_int] node size: 24
+[int data] # elements: 625792
+[int data] CPU time: 4.760 (= 4.760 + 0.000)
+[benchmark] rss diff: 424.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_rb_cpp2/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539104.000 kB
+-- free          11874548.000 kB
+
+-- retval                   0
+-- real                 5.643 sec
+-- user                 5.560 sec
+-- sys                  0.050 sec
+-- maxrss          235688.000 kB
+-- avgrss          215697.355 kB
+-- maxvsize        247364.000 kB
+-- avgvsize        231572.841 kB
+
+Running test libavl_rb_cpp/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[test_int] node size: 32
+[int data] # elements: 625792
+[int data] CPU time: 4.600 (= 4.580 + 0.020)
+[benchmark] rss diff: 424.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_rb_cpp/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538932.000 kB
+-- free          11874368.000 kB
+
+-- retval                   0
+-- real                 5.474 sec
+-- user                 5.380 sec
+-- sys                  0.060 sec
+-- maxrss          245456.000 kB
+-- avgrss          223156.074 kB
+-- maxvsize        257264.000 kB
+-- avgvsize        239128.206 kB
+
+Running test libavl_rb/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 6.110 (= 6.080 + 0.030)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_rb/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539108.000 kB
+-- free          11874540.000 kB
+
+-- retval                   0
+-- real                 6.997 sec
+-- user                 6.900 sec
+-- sys                  0.070 sec
+-- maxrss          264356.000 kB
+-- avgrss          241311.598 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        248351.828 kB
+
+Running test NP_rbtree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 4.280 (= 4.270 + 0.010)
+[benchmark] rss diff: 29568.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit NP_rbtree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538684.000 kB
+-- free          11874116.000 kB
+
+-- retval                   0
+-- real                 5.147 sec
+-- user                 5.030 sec
+-- sys                  0.090 sec
+-- maxrss          244820.000 kB
+-- avgrss          221002.406 kB
+-- maxvsize        248240.000 kB
+-- avgvsize        228914.836 kB
+
+Running test NP_splaytree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 6.970 (= 6.960 + 0.010)
+[benchmark] rss diff: 19536.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit NP_splaytree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538684.000 kB
+-- free          11874112.000 kB
+
+-- retval                   0
+-- real                 7.821 sec
+-- user                 7.740 sec
+-- sys                  0.060 sec
+-- maxrss          234788.000 kB
+-- avgrss          220819.789 kB
+-- maxvsize        238472.000 kB
+-- avgvsize        227338.249 kB
+
+Running test _qt_qhash/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 216768.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.390 (= 1.370 + 0.020)
+[benchmark] rss diff: 296.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _qt_qhash/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538368.000 kB
+-- free          11873796.000 kB
+
+-- retval                   0
+-- real                 2.263 sec
+-- user                 2.170 sec
+-- sys                  0.080 sec
+-- maxrss          245592.000 kB
+-- avgrss          194899.161 kB
+-- maxvsize        275740.000 kB
+-- avgvsize        235348.786 kB
+
+Running test _qt_qmap/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 216768.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 8.420 (= 8.420 + 0.000)
+[benchmark] rss diff: 380.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _qt_qmap/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538548.000 kB
+-- free          11873968.000 kB
+
+-- retval                   0
+-- real                 9.297 sec
+-- user                 9.210 sec
+-- sys                  0.060 sec
+-- maxrss          237624.000 kB
+-- avgrss          224988.933 kB
+-- maxvsize        267916.000 kB
+-- avgvsize        257548.410 kB
+
+Running test rdestl/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 0.360 (= 0.350 + 0.010)
+[benchmark] rss diff: 424.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit rdestl/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538180.000 kB
+-- free          11873596.000 kB
+
+-- retval                   0
+-- real                 1.215 sec
+-- user                 1.140 sec
+-- sys                  0.050 sec
+-- maxrss          265432.000 kB
+-- avgrss          156064.504 kB
+-- maxvsize        277092.000 kB
+-- avgvsize        186047.059 kB
+
+Running test sgi_hash_map/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.220 (= 1.200 + 0.020)
+[benchmark] rss diff: 424.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit sgi_hash_map/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538308.000 kB
+-- free          11873724.000 kB
+
+-- retval                   0
+-- real                 2.084 sec
+-- user                 2.000 sec
+-- sys                  0.060 sec
+-- maxrss          241744.000 kB
+-- avgrss          189076.311 kB
+-- maxvsize        253556.000 kB
+-- avgvsize        211623.437 kB
+
+Running test sgi_map/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 4.040 (= 4.040 + 0.000)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit sgi_map/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538156.000 kB
+-- free          11873568.000 kB
+
+-- retval                   0
+-- real                 4.894 sec
+-- user                 4.800 sec
+-- sys                  0.070 sec
+-- maxrss          245456.000 kB
+-- avgrss          220443.335 kB
+-- maxvsize        257264.000 kB
+-- avgvsize        236746.160 kB
+
+Running test sglib_rbtree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 5.500 (= 5.490 + 0.010)
+[benchmark] rss diff: 29568.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit sglib_rbtree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538392.000 kB
+-- free          11873804.000 kB
+
+-- retval                   0
+-- real                 6.361 sec
+-- user                 6.280 sec
+-- sys                  0.060 sec
+-- maxrss          244820.000 kB
+-- avgrss          224735.306 kB
+-- maxvsize        248252.000 kB
+-- avgvsize        231887.666 kB
+
+Running test stb_hash/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215328.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.170 (= 1.150 + 0.020)
+[benchmark] rss diff: 372.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit stb_hash/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538460.000 kB
+-- free          11873868.000 kB
+
+-- retval                   0
+-- real                 2.027 sec
+-- user                 1.920 sec
+-- sys                  0.090 sec
+-- maxrss          232076.000 kB
+-- avgrss          181462.129 kB
+-- maxvsize        238628.000 kB
+-- avgvsize        199218.925 kB
+
+Running test stx_btree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 2.130 (= 2.120 + 0.010)
+[benchmark] rss diff: 440.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit stx_btree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538120.000 kB
+-- free          11873528.000 kB
+
+-- retval                   0
+-- real                 3.007 sec
+-- user                 2.900 sec
+-- sys                  0.080 sec
+-- maxrss          225128.000 kB
+-- avgrss          192659.758 kB
+-- maxvsize        236964.000 kB
+-- avgvsize        212199.544 kB
+
+Running test TN_rbtree/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[test_int] node size: 40
+[int data] # elements: 625792
+[int data] CPU time: 4.700 (= 4.690 + 0.010)
+[benchmark] rss diff: 424.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit TN_rbtree/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538876.000 kB
+-- free          11874276.000 kB
+
+-- retval                   0
+-- real                 5.567 sec
+-- user                 5.480 sec
+-- sys                  0.070 sec
+-- maxrss          245456.000 kB
+-- avgrss          223507.928 kB
+-- maxvsize        257264.000 kB
+-- avgvsize        239430.744 kB
+
+Running test tr1_unordered_map/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215892.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.020 (= 1.010 + 0.010)
+[benchmark] rss diff: 424.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit tr1_unordered_map/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14538632.000 kB
+-- free          11874028.000 kB
+
+-- retval                   0
+-- real                 1.879 sec
+-- user                 1.800 sec
+-- sys                  0.060 sec
+-- maxrss          244628.000 kB
+-- avgrss          183868.172 kB
+-- maxvsize        256504.000 kB
+-- avgvsize        208283.527 kB
+
+Running test uthash/test (-i). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[int data] # elements: 625792
+[int data] CPU time: 1.570 (= 1.550 + 0.020)
+[benchmark] rss diff: 57192.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit uthash/test -i
+
+-- totalmem      16237192.000 kB
+-- available     14539220.000 kB
+-- free          11874616.000 kB
+
+-- retval                   0
+-- real                 2.471 sec
+-- user                 2.350 sec
+-- sys                  0.100 sec
+-- maxrss          273184.000 kB
+-- avgrss          210691.951 kB
+-- maxvsize        276780.000 kB
+-- avgvsize        224231.984 kB
+
+Running test _boost_hash/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 2.230 (= 2.220 + 0.010)
+[benchmark] rss diff: 436.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _boost_hash/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539160.000 kB
+-- free          11874552.000 kB
+
+-- retval                   0
+-- real                 3.100 sec
+-- user                 3.000 sec
+-- sys                  0.080 sec
+-- maxrss          253716.000 kB
+-- avgrss          212653.130 kB
+-- maxvsize        265336.000 kB
+-- avgvsize        231714.286 kB
+
+Running test _gdsl_rb/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 14.110 (= 14.090 + 0.020)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _gdsl_rb/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539360.000 kB
+-- free          11874748.000 kB
+
+-- retval                   0
+-- real                15.023 sec
+-- user                14.920 sec
+-- sys                  0.070 sec
+-- maxrss          264356.000 kB
+-- avgrss          251273.348 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        256470.596 kB
+
+Running test _glib_hash/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215684.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 1.580 (= 1.560 + 0.020)
+[benchmark] rss diff: 224.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _glib_hash/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538796.000 kB
+-- free          11874184.000 kB
+
+-- retval                   0
+-- real                 2.487 sec
+-- user                 2.380 sec
+-- sys                  0.080 sec
+-- maxrss          255592.000 kB
+-- avgrss          201782.520 kB
+-- maxvsize        271652.000 kB
+-- avgvsize        222853.187 kB
+
+Running test _glib_tree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215684.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 8.970 (= 8.950 + 0.020)
+[benchmark] rss diff: 54372.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _glib_tree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538744.000 kB
+-- free          11874124.000 kB
+
+-- retval                   0
+-- real                 9.930 sec
+-- user                 9.820 sec
+-- sys                  0.080 sec
+-- maxrss          270056.000 kB
+-- avgrss          250629.200 kB
+-- maxvsize        281128.000 kB
+-- avgvsize        264357.960 kB
+
+Running test google_dense/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[str data] # elements: 4999988
+[str data] CPU time: 0.520 (= 0.390 + 0.130)
+[benchmark] rss diff: 432.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit google_dense/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538580.000 kB
+-- free          11873960.000 kB
+
+-- retval                   0
+-- real                 1.377 sec
+-- user                 1.160 sec
+-- sys                  0.200 sec
+-- maxrss          609280.000 kB
+-- avgrss          223382.206 kB
+-- maxvsize        621176.000 kB
+-- avgvsize        263909.265 kB
+
+Running test google_sparse/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215892.000 kB
+[str data] # elements: 4999982
+[str data] CPU time: 1.910 (= 1.850 + 0.060)
+[benchmark] rss diff: 456.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit google_sparse/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538956.000 kB
+-- free          11874336.000 kB
+
+-- retval                   0
+-- real                 2.782 sec
+-- user                 2.620 sec
+-- sys                  0.140 sec
+-- maxrss          314536.000 kB
+-- avgrss          217856.710 kB
+-- maxvsize        326228.000 kB
+-- avgvsize        238491.884 kB
+
+Running test htable/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215248.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 1.660 (= 1.630 + 0.030)
+[benchmark] rss diff: 81892.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit htable/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538620.000 kB
+-- free          11873992.000 kB
+
+-- retval                   0
+-- real                 2.523 sec
+-- user                 2.420 sec
+-- sys                  0.080 sec
+-- maxrss          297140.000 kB
+-- avgrss          229333.776 kB
+-- maxvsize        300604.000 kB
+-- avgvsize        242196.496 kB
+
+Running test JE_rb_new/test (-s). Please wait ...
+-- CMD: runit/runit JE_rb_new/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538588.000 kB
+-- free          11873960.000 kB
+
+-- retval                   0
+-- real                 1.795 sec
+-- user                 1.710 sec
+-- sys                  0.070 sec
+-- maxrss          233468.000 kB
+-- avgrss          172326.870 kB
+-- maxvsize        237156.000 kB
+-- avgvsize        189132.136 kB
+
+Running test JE_rb_old/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 4975444
+[str data] CPU time: 6.230 (= 6.130 + 0.100)
+[benchmark] rss diff: 310992.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JE_rb_old/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538900.000 kB
+-- free          11874260.000 kB
+
+-- retval                   0
+-- real                 7.116 sec
+-- user                 6.910 sec
+-- sys                  0.180 sec
+-- maxrss          526244.000 kB
+-- avgrss          349479.261 kB
+-- maxvsize        529928.000 kB
+-- avgvsize        356391.712 kB
+
+Running test JE_trp_hash/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 14.450 (= 14.440 + 0.010)
+[benchmark] rss diff: 29568.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JE_trp_hash/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539192.000 kB
+-- free          11874548.000 kB
+
+-- retval                   0
+-- real                15.343 sec
+-- user                15.220 sec
+-- sys                  0.080 sec
+-- maxrss          244820.000 kB
+-- avgrss          234519.626 kB
+-- maxvsize        248244.000 kB
+-- avgvsize        239667.827 kB
+
+Running test JE_trp_prng/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 15.340 (= 15.330 + 0.010)
+[benchmark] rss diff: 29568.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JE_trp_prng/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539424.000 kB
+-- free          11874768.000 kB
+
+-- retval                   0
+-- real                16.233 sec
+-- user                16.130 sec
+-- sys                  0.070 sec
+-- maxrss          244820.000 kB
+-- avgrss          235163.642 kB
+-- maxvsize        248240.000 kB
+-- avgvsize        240191.538 kB
+
+Running test JG_btree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 11.410 (= 11.390 + 0.020)
+[benchmark] rss diff: 40936.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit JG_btree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539292.000 kB
+-- free          11874632.000 kB
+
+-- retval                   0
+-- real                12.299 sec
+-- user                12.190 sec
+-- sys                  0.070 sec
+-- maxrss          256188.000 kB
+-- avgrss          242293.155 kB
+-- maxvsize        259724.000 kB
+-- avgvsize        247729.462 kB
+
+Running test kbtree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 7.170 (= 7.160 + 0.010)
+[benchmark] rss diff: 376.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit kbtree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539144.000 kB
+-- free          11874476.000 kB
+
+-- retval                   0
+-- real                 8.064 sec
+-- user                 7.980 sec
+-- sys                  0.060 sec
+-- maxrss          232424.000 kB
+-- avgrss          217495.294 kB
+-- maxvsize        236092.000 kB
+-- avgvsize        224032.289 kB
+
+Running test khash/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 1.300 (= 1.300 + 0.000)
+[benchmark] rss diff: 372.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit khash/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539004.000 kB
+-- free          11874336.000 kB
+
+-- retval                   0
+-- real                 2.178 sec
+-- user                 2.090 sec
+-- sys                  0.070 sec
+-- maxrss          234452.000 kB
+-- avgrss          186401.656 kB
+-- maxvsize        238052.000 kB
+-- avgvsize        200637.600 kB
+
+Running test libavl_avl_cpp/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[test_int] node size: 32
+[str data] # elements: 625792
+[str data] CPU time: 8.560 (= 8.540 + 0.020)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_avl_cpp/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538844.000 kB
+-- free          11874172.000 kB
+
+-- retval                   0
+-- real                 9.430 sec
+-- user                 9.330 sec
+-- sys                  0.060 sec
+-- maxrss          245456.000 kB
+-- avgrss          231273.585 kB
+-- maxvsize        257264.000 kB
+-- avgvsize        245484.307 kB
+
+Running test libavl_avl/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 11.150 (= 11.130 + 0.020)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_avl/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539072.000 kB
+-- free          11874392.000 kB
+
+-- retval                   0
+-- real                12.037 sec
+-- user                11.910 sec
+-- sys                  0.100 sec
+-- maxrss          264356.000 kB
+-- avgrss          249616.363 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        255114.530 kB
+
+Running test libavl_bst/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 15.270 (= 15.270 + 0.000)
+[benchmark] rss diff: 39336.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_bst/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539292.000 kB
+-- free          11874596.000 kB
+
+-- retval                   0
+-- real                16.234 sec
+-- user                16.160 sec
+-- sys                  0.050 sec
+-- maxrss          254588.000 kB
+-- avgrss          243273.262 kB
+-- maxvsize        258144.000 kB
+-- avgvsize        248441.215 kB
+
+Running test libavl_prb/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 11.460 (= 11.440 + 0.020)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_prb/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539516.000 kB
+-- free          11874816.000 kB
+
+-- retval                   0
+-- real                12.426 sec
+-- user                12.330 sec
+-- sys                  0.070 sec
+-- maxrss          264356.000 kB
+-- avgrss          248954.935 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        254621.443 kB
+
+Running test libavl_rb_cpp2/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[test_int] node size: 32
+[str data] # elements: 625792
+[str data] CPU time: 10.090 (= 10.080 + 0.010)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_rb_cpp2/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538764.000 kB
+-- free          11874060.000 kB
+
+-- retval                   0
+-- real                11.014 sec
+-- user                10.910 sec
+-- sys                  0.080 sec
+-- maxrss          245456.000 kB
+-- avgrss          232181.698 kB
+-- maxvsize        257264.000 kB
+-- avgvsize        246210.692 kB
+
+Running test libavl_rb_cpp/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[test_int] node size: 32
+[str data] # elements: 625792
+[str data] CPU time: 8.630 (= 8.620 + 0.010)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_rb_cpp/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538852.000 kB
+-- free          11874148.000 kB
+
+-- retval                   0
+-- real                 9.505 sec
+-- user                 9.410 sec
+-- sys                  0.070 sec
+-- maxrss          245456.000 kB
+-- avgrss          231302.703 kB
+-- maxvsize        257264.000 kB
+-- avgvsize        245569.183 kB
+
+Running test libavl_rb/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 9.960 (= 9.950 + 0.010)
+[benchmark] rss diff: 49104.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit libavl_rb/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539232.000 kB
+-- free          11874524.000 kB
+
+-- retval                   0
+-- real                10.851 sec
+-- user                10.770 sec
+-- sys                  0.040 sec
+-- maxrss          264356.000 kB
+-- avgrss          248090.731 kB
+-- maxvsize        267912.000 kB
+-- avgvsize        253815.397 kB
+
+Running test NP_rbtree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 9.770 (= 9.760 + 0.010)
+[benchmark] rss diff: 39336.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit NP_rbtree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539160.000 kB
+-- free          11874444.000 kB
+
+-- retval                   0
+-- real                10.663 sec
+-- user                10.580 sec
+-- sys                  0.060 sec
+-- maxrss          254588.000 kB
+-- avgrss          239941.750 kB
+-- maxvsize        258140.000 kB
+-- avgvsize        245743.846 kB
+
+Running test NP_splaytree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 13.120 (= 13.100 + 0.020)
+[benchmark] rss diff: 29568.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit NP_splaytree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539272.000 kB
+-- free          11874540.000 kB
+
+-- retval                   0
+-- real                13.989 sec
+-- user                13.870 sec
+-- sys                  0.090 sec
+-- maxrss          244820.000 kB
+-- avgrss          234077.689 kB
+-- maxvsize        248240.000 kB
+-- avgvsize        239322.893 kB
+
+Running test _qt_qhash/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 216768.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 1.970 (= 1.950 + 0.020)
+[benchmark] rss diff: 300.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _qt_qhash/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539060.000 kB
+-- free          11874328.000 kB
+
+-- retval                   0
+-- real                 2.828 sec
+-- user                 2.740 sec
+-- sys                  0.060 sec
+-- maxrss          254460.000 kB
+-- avgrss          210850.329 kB
+-- maxvsize        284560.000 kB
+-- avgvsize        249122.943 kB
+
+Running test _qt_qmap/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 216768.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 17.120 (= 17.090 + 0.030)
+[benchmark] rss diff: 388.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit _qt_qmap/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539616.000 kB
+-- free          11874880.000 kB
+
+-- retval                   0
+-- real                18.008 sec
+-- user                17.880 sec
+-- sys                  0.090 sec
+-- maxrss          246336.000 kB
+-- avgrss          237624.708 kB
+-- maxvsize        276628.000 kB
+-- avgvsize        269067.298 kB
+
+Running test rdestl/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 0.720 (= 0.700 + 0.020)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit rdestl/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539144.000 kB
+-- free          11874408.000 kB
+
+-- retval                   0
+-- real                 1.628 sec
+-- user                 1.510 sec
+-- sys                  0.100 sec
+-- maxrss          289996.000 kB
+-- avgrss          181754.325 kB
+-- maxvsize        301668.000 kB
+-- avgvsize        208270.650 kB
+
+Running test sgi_hash_map/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 2.260 (= 2.250 + 0.010)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit sgi_hash_map/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539072.000 kB
+-- free          11874336.000 kB
+
+-- retval                   0
+-- real                 3.116 sec
+-- user                 3.050 sec
+-- sys                  0.050 sec
+-- maxrss          241748.000 kB
+-- avgrss          205671.858 kB
+-- maxvsize        253556.000 kB
+-- avgvsize        225016.039 kB
+
+Running test sgi_map/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 9.920 (= 9.920 + 0.000)
+[benchmark] rss diff: 432.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit sgi_map/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539116.000 kB
+-- free          11874372.000 kB
+
+-- retval                   0
+-- real                10.810 sec
+-- user                10.750 sec
+-- sys                  0.040 sec
+-- maxrss          255224.000 kB
+-- avgrss          240838.486 kB
+-- maxvsize        267032.000 kB
+-- avgvsize        254803.763 kB
+
+Running test sglib_rbtree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 9.290 (= 9.280 + 0.010)
+[benchmark] rss diff: 29568.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit sglib_rbtree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14539488.000 kB
+-- free          11874740.000 kB
+
+-- retval                   0
+-- real                10.174 sec
+-- user                10.100 sec
+-- sys                  0.040 sec
+-- maxrss          244820.000 kB
+-- avgrss          231148.406 kB
+-- maxvsize        248252.000 kB
+-- avgvsize        237032.170 kB
+
+Running test stb_hash/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215328.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 1.730 (= 1.700 + 0.030)
+[benchmark] rss diff: 372.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit stb_hash/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538704.000 kB
+-- free          11873956.000 kB
+
+-- retval                   0
+-- real                 2.599 sec
+-- user                 2.500 sec
+-- sys                  0.080 sec
+-- maxrss          248452.000 kB
+-- avgrss          199416.372 kB
+-- maxvsize        255012.000 kB
+-- avgvsize        214937.023 kB
+
+Running test stx_btree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215888.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 6.860 (= 6.840 + 0.020)
+[benchmark] rss diff: 448.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit stx_btree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538780.000 kB
+-- free          11874028.000 kB
+
+-- retval                   0
+-- real                 7.716 sec
+-- user                 7.630 sec
+-- sys                  0.060 sec
+-- maxrss          230672.000 kB
+-- avgrss          216724.062 kB
+-- maxvsize        242508.000 kB
+-- avgvsize        231469.422 kB
+
+Running test TN_rbtree/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215884.000 kB
+[test_str] node size: 48
+[str data] # elements: 625792
+[str data] CPU time: 11.270 (= 11.260 + 0.010)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit TN_rbtree/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538516.000 kB
+-- free          11873756.000 kB
+
+-- retval                   0
+-- real                12.207 sec
+-- user                12.130 sec
+-- sys                  0.050 sec
+-- maxrss          255220.000 kB
+-- avgrss          240913.333 kB
+-- maxvsize        267032.000 kB
+-- avgvsize        254721.928 kB
+
+Running test tr1_unordered_map/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215892.000 kB
+[str data] # elements: 5000000
+[str data] CPU time: 0.750 (= 0.690 + 0.060)
+[benchmark] rss diff: 428.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit tr1_unordered_map/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538364.000 kB
+-- free          11873604.000 kB
+
+-- retval                   0
+-- real                 1.655 sec
+-- user                 1.530 sec
+-- sys                  0.100 sec
+-- maxrss          455320.000 kB
+-- avgrss          227117.644 kB
+-- maxvsize        467172.000 kB
+-- avgvsize        256047.387 kB
+
+Running test uthash/test (-s). Please wait ...
+[benchmark] generating data... done!
+[benchmark] initial rss: 215252.000 kB
+[str data] # elements: 625792
+[str data] CPU time: 2.000 (= 1.980 + 0.020)
+[benchmark] rss diff: 57124.000 kB
+[benchmark] finished!
+
+-- CMD: runit/runit uthash/test -s
+
+-- totalmem      16237192.000 kB
+-- available     14538604.000 kB
+-- free          11873840.000 kB
+
+-- retval                   0
+-- real                 2.865 sec
+-- user                 2.760 sec
+-- sys                  0.080 sec
+-- maxrss          272376.000 kB
+-- avgrss          221381.803 kB
+-- maxvsize        276104.000 kB
+-- avgvsize        232949.592 kB
+
