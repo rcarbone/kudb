@@ -1,9 +1,10 @@
 # kudb - Benchmark of Dictionary Structures by Heng Li
 
-Results for the impatients
---------------------------
+# Results for the impatients
 
- Test results sorted by CPU Time (unsigned keys, int values)
+Data sorted by CPU Time (unsigned keys, int values)
+
+Linux nuc 3.2.0-4-amd64 #1 SMP Debian 3.2.81-1 x86_64 GNU/Linux
 
 | Rank | Implementation    | CPU (secs) | Memory (kB) |    #    | Notes     |
 | ---- | ----------------- | ---------- | ----------- | ------- | --------- |
