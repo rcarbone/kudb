@@ -18,7 +18,7 @@ What I did:
    the test case is commented out in Makefile but you can download gdsl from the Internet
    GDSL project homepage: http://www.nongnu.org/gdsl
 
-  o Modified several sources to compile on my Linux Debian (the original version has been saved the the suffix .ORG)
+  o Modified several sources to compile on my Linux Debian (the original version has been saved with the suffix .ORG)
   o Modified top-level Makefile to compile all the subdirectories
   o Added a run rule to run a complete test
   o Wrote a simple perl script etc/parse-udb.pl to parse and sort the output of a test run
