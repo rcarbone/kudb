@@ -18,7 +18,7 @@ struct hashstr {
 	}
 };
 
-typedef unordered_map<unsigned, int, hash<unsigned> > inthash;
+typedef unordered_map<unsigned, int, std::hash<unsigned> > inthash;
 typedef unordered_map<const char*, int, hashstr, eqstr> strhash;
 
 int test_int(int N, const unsigned *data)

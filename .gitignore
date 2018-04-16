@@ -1,0 +1,20 @@
+# Libraries
+*.a
+
+# Shared objects
+*.so
+
+# Object files
+*.o
+
+# Dependency files
+*.M
+
+# Backup files
+*~
+
+# Executables
+src/*/test
+src/benchmark/run
+src/runit/runit
+src/runit/runtest

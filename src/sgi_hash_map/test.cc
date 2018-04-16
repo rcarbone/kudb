@@ -12,8 +12,9 @@ struct eqstr {
     }
 };
 
-typedef hash_map<unsigned, int, hash<unsigned> > inthash;
-typedef hash_map<const char*, int, hash<const char*>, eqstr> strhash;
+typedef hash_map<unsigned, int, __gnu_cxx::hash<unsigned> > inthash;
+typedef hash_map<const char*, int, __gnu_cxx::hash<const char*>, eqstr> strhash;
+
 
 int test_int(int N, const unsigned *data)
 {
